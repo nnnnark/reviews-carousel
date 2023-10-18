@@ -1,0 +1,135 @@
+/**{ margin: 0 }*/
+
+body{
+    background-color: #eaeaea;
+}
+
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    color: #000b4d;
+    margin-top: 90px;
+}
+
+.appearTitleAnim{
+    -webkit-animation-name: appearTitle;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes appearTitle {
+    from {
+        margin-left: -100px;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+hr{
+    width: 100px;
+    height: 5px;
+    background-color: #2222ff;
+    border: #2222ff;
+    margin-bottom: 20px;
+}
+
+#area{
+    margin: auto;
+    width: 700px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+
+.profilePictures{
+    width: 180px;
+    height: 180px;
+    image-rendering: auto;
+    margin-left: 260px;
+    margin-top: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 50px #000336;
+}
+
+.appearAnim{
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1s;
+    opacity: 0;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes appear {
+    from {
+        scale: 0.9;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.flipAnim{
+    -webkit-animation-name: flip;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes flip {
+    from {
+        -webkit-transform: rotateY(-360deg) scale(1) skew(0deg) translate(0px);
+    }
+    to {
+        -webkit-transform: rotateY(0deg) scale(1) skew(0deg) translate(0px);
+    }
+}
+
+#description{
+    text-align: center;
+}
+
+
+.name{
+    padding: 10px;
+    font-size: 27px;
+    font-family: Tahoma, serif;
+    color: #0e1052;
+}
+
+.position{
+    font-family: sans-serif;
+    color: #5454ff;
+    text-transform: uppercase;
+}
+
+.about{
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 600px;
+    font-size: 17px;
+    font-family: SansSerif, monospace;
+    height: 80px;
+    color: #737373;
+}
+
+#pageButtons{
+    text-align: center;
+}
+
+.but{
+    font-size:40px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    margin-inline: 40px;
+    color: #00003d;
+}
